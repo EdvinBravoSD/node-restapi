@@ -1,0 +1,8 @@
+#comando para construir la imagen
+docker build -t node-restapi . 
+
+#comando para el contenderor interactiva
+docker run -it -p 4000:3000 node-restapi
+
+#comando para el contenedor en modo detach
+docker run -d -p 4000:3000 node-restapi 
